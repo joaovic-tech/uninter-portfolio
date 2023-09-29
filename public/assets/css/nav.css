@@ -1,0 +1,58 @@
+/* Estilização para o menu de navegação */
+header {
+  background: #18181b;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* Estilizando a logo */
+.logo img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.logo:hover {
+  opacity: 75%;
+  transition: .2s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  position: relative; /* Para posicionar o elemento filho (a linha) */
+}
+
+/* Estilização para a linha que crescerá */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; /* Posição inicial (abaixo do texto) */
+  left: 0;
+  width: 0; /* Largura inicial 0 */
+  height: 2px; /* Altura da linha */
+  background-color: #007bff; /* Cor da linha */
+  transition: width 0.3s; /* Transição da largura */
+}
+
+/* Estilização da linha quando passar o mouse */
+nav a:hover::after {
+  width: 100%; /* Largura da linha cresce para 100% */
+}

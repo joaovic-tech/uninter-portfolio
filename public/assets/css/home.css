@@ -1,0 +1,158 @@
+main.container {
+  width: 70%;
+  margin: auto;
+}
+
+/* gradient-animator */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 100%;
+  }
+}
+
+.gradient-animator {
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    red,
+    yellow,
+    #ff00ff,
+    cyan,
+    #00ff00,
+    blue,
+    red
+  );
+  background-size: 50% 100%;
+  animation: gradientAnimation 5s linear infinite;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+}
+
+.gradient-animator-absolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  filter: blur(24px);
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    red,
+    yellow,
+    #ff00ff,
+    cyan,
+    #00ff00,
+    blue,
+    red
+  );
+  background-size: 50% 100%;
+  animation: gradientAnimation 5s linear infinite;
+}
+
+/* Estilização para o profileInfo */
+#profile-info-container {
+  position: relative;
+  background: var(--bg-color);
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+#profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 1rem;
+}
+
+#profile-info span svg,
+#profile-info span {
+  text-align: end;
+  color: #52525b;
+  fill: #52525b;
+}
+
+#profile-image {
+  width: 10rem;
+  height: auto;
+  border-radius: 100%;
+  border: 0.2rem solid var(--primary-color);
+}
+
+/* Estilização para o nome */
+#name {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+#username {
+  opacity: 0.3;
+  margin-top: 1rem;
+}
+
+#profile-info-container p#bio {
+  background: transparent;
+  border-radius: 0;
+  border-bottom: 0.2rem solid var(--bg-color2);
+  margin: 2rem 0;
+}
+
+#profile-info-container p {
+  background: var(--bg-color2);
+  padding: 1rem;
+  border-radius: 2rem 2rem 0.5rem 0.5rem;
+  text-align: center;
+}
+
+#profile-info-container p a:hover {
+  color: var(--secondary-color);
+}
+
+/* Redes sociais */
+.social-links {
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+  text-align: start;
+}
+
+.social-link {
+  background: var(--bg-color2);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link,
+.social-link svg {
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: var(--text-color2);
+  fill: var(--text-color2);
+}
+
+.social-link:hover,
+.social-link:hover svg {
+  color: var(--text-color);
+  fill: var(--text-color);
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 798px) {
+  main.container {
+    width: 90%;
+  }
+}
