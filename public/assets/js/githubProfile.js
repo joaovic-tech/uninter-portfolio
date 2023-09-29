@@ -17,11 +17,11 @@ fetch(apiUrl)
     // Extrai as informações necessárias
 
     // Atualiza os elementos HTML com as informações
-    nameElement.textContent = name;
-    usernameElement.textContent = `{${login}}`;
-    bioElement.textContent = bio;
-    profileImageElement.src = avatar_url;
-    profileImageElement.alt = `Foto de Perfil de ${name}`;
+    nameElement ? nameElement.textContent = name : null;
+    usernameElement ? usernameElement.textContent = `{${login}}` : null;
+    bioElement ? bioElement.textContent = bio : null;
+    profileImageElement ? profileImageElement.src = avatar_url : null;
+    profileImageElement ? profileImageElement.alt = `Foto de Perfil de ${name}` : null;
   })
   .catch(error => {
     console.error('Erro ao obter informações do GitHub:', error);

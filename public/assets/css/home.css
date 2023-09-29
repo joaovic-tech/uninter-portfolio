@@ -76,13 +76,6 @@ main.container {
   fill: #52525b;
 }
 
-#profile-image {
-  width: 10rem;
-  height: auto;
-  border-radius: 100%;
-  border: 0.2rem solid var(--primary-color);
-}
-
 /* Estilização para o nome */
 #name {
   margin-top: 1rem;

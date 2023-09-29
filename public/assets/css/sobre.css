@@ -1,0 +1,34 @@
+.container {
+  padding: 20px;
+  background-color: var(--bg-color2);
+  border-radius: 10px;
+  margin: 20px;
+  justify-content: start;
+}
+
+.container div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+/* Estilos para a lista (ol) e itens de lista (li) */
+ol {
+  list-style-type: decimal; /* Usar números como marcadores */
+  margin-left: 20px; /* Adicionar margem à lista */
+}
+
+li {
+  margin-bottom: 20px; /* Espaçamento entre itens da lista */
+}
+
+p {
+  margin-bottom: 10px;
+  color: var(--text-color2);
+}
