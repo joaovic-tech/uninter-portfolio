@@ -2,6 +2,8 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/joaovic-tech/uninter-portfolio)
 
+![](./template/template.webp)
+
 Este é o repositório do meu portfólio pessoal, desenvolvido como parte da disciplina de **Aplicações web e moveis** na UNINTER.
 
 ## Visão Geral
