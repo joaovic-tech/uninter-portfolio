@@ -5,6 +5,7 @@
   --bg-color: #09090b;
   --bg-color2: #18181b;
   --text-color: #fafafa;
+  --footer-color: #000000;
   --text-color2: #71717a;
 }
 
@@ -34,24 +35,35 @@ body {
 
 /* Foto de perfil do GitHub */
 
-#profile-image {
+.profile-image {
   width: 10rem;
   height: auto;
   border-radius: 100%;
   border: 0.2rem solid var(--primary-color);
 }
 
+/* Footer */
+
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   text-align: center;
   align-items: center;
   gap: 1rem;
   padding: 0.5rem;
   border-radius: 1rem 1rem 0 0;
-  background-color: var(--bg-color2);
+  background-color: var(--footer-color);
+}
+
+footer .profile-image {
+  width: 3rem;
+  opacity: 0.5;
+}
+
+footer p {
+  color: var(--bg-color2);
 }
 
 footer svg {
-  fill: var(--primary-color);
+  fill: var(--bg-color2);
 }
